@@ -28,6 +28,8 @@
      
     $res = mysqli_query($conexion,"SELECT * FROM producto") or die(mysqli_error($conexion)); ;
     
+    dump($rest);
+    
     //if($res->num_rows>0) {
     //mysqli_data_seek ($res, 0); 
     
