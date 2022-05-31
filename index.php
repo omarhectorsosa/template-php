@@ -22,15 +22,16 @@
     /**
      * Conecto a una base de datoss de heroku 
      * */    
-    
-    if (!($conexion=mysqli_connect("us-cdbr-east-03.cleardb.com","b019e5d7c7a033","615a27bc","heroku_1ae4bba01a595f3"))) { 
+
+    //if (!($conexion=mysqli_connect("us-cdbr-east-03.cleardb.com","b019e5d7c7a033","615a27bc","heroku_1ae4bba01a595f3"))) { 
+    if (!($conexion=mysqli_connect("sql5.freemysqlhosting.net","sql5496827","tAee5z4mwN","sql5496827"))) { 
     //if (!($conexion=mysqli_connect("127.0.0.1","root","password","perfumeria"))) { 
         echo '<div class="row"><div class="col-12">Error conectando a la base de datos</div></div>' ;
         echo '</main></body>';  
         die(); 
     } 
      
-    $res = mysqli_query($conexion,"SELECT * FROM producto") or die(mysqli_error($conexion)); ;
+    $res = mysqli_query($conexion,"SELECT * FROM product") or die(mysqli_error($conexion)); ;
     
     //if($res->num_rows>0) {
     //mysqli_data_seek ($res, 0); 
