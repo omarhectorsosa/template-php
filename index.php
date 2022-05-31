@@ -19,6 +19,10 @@
     echo '<body><main clas="container">';
     echo '<div class="row text-center bg-success mb-10"><div class="col-12">Tabla.</div></div>' ;
 
+    /**
+     * Conecto a una base de datoss de heroku 
+     * */    
+    
     if (!($conexion=mysqli_connect("us-cdbr-east-03.cleardb.com","b019e5d7c7a033","615a27bc","heroku_1ae4bba01a595f3"))) { 
     //if (!($conexion=mysqli_connect("127.0.0.1","root","password","perfumeria"))) { 
         echo '<div class="row"><div class="col-12">Error conectando a la base de datos</div></div>' ;
@@ -27,8 +31,6 @@
     } 
      
     $res = mysqli_query($conexion,"SELECT * FROM producto") or die(mysqli_error($conexion)); ;
-    
-    dump($rest);
     
     //if($res->num_rows>0) {
     //mysqli_data_seek ($res, 0); 
