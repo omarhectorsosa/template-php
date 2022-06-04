@@ -20,7 +20,7 @@
     echo '<div class="row text-center bg-success mb-10"><div class="col-12">Tabla.</div></div>' ;
 
     /**
-     * Conecto a una base de datoss de heroku 
+     * Conecto a una base de datoss de heroku ejemplo
      * */    
 
     //if (!($conexion=mysqli_connect("us-cdbr-east-03.cleardb.com","b019e5d7c7a033","615a27bc","heroku_1ae4bba01a595f3"))) { 
