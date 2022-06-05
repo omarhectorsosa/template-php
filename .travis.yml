@@ -1,8 +1,6 @@
 lenguage: php
 php:
   - '7.0'
-install:
-  - composer install
 deploy:
   provider: heroku
   api_key:
